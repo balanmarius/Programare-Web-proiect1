@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+  <head>
+    <title>Acasă</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="img" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/stil.css" />
+    <script src="/js/script.js"></script>
+    <script src="/js/persoane.js"></script>
+    <script src="/js/cumparaturi.js"></script>
+    <script src="/js/worker.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <a onclick="schimbaContinut('acasa','/js/script.js','')">Acasă</a>
+        <a onclick="schimbaContinut('inregistreaza', '/js/script.js', '')"
+          >Înregistrează</a
+        >
+        <a onclick="schimbaContinut('video', '/js/script.js', '')">Video</a>
+        <a onclick="schimbaContinut('despre_html', '/js/script.js', '');"
+          >Despre</a
+        >
+        <a onclick="schimbaContinut('desen', '/js/script.js', '')">Desen</a>
+        <a onclick="schimbaContinut('invat_js', '/js/script.js', '')"
+          >ÎnvățJS</a
+        >
+        <a
+          onclick="schimbaContinut('persoane', '/js/persoane.js', 'incarcaPersoane')"
+          >Persoane</a
+        >
+        <a onclick="schimbaContinut('verifica', '/js/script.js', '')"
+          >Verifică</a
+        >
+        <a onclick="schimbaContinut('cumparaturi', '/js/cumparaturi.js', '')"
+          >Cumpărături</a
+        >
+      </nav>
+    </header>
+
+    <div id="subheader">
+      <div class="imagini">
+        <img src="./imagini/img2.jpg" class="img img2" alt="" />
+        <img src="./imagini/img3.jpg" class="img img3" alt="" />
+        <img src="./imagini/img1.jpg" class="img img1" alt="" />
+      </div>
+      <h1 class="title">Programare web</h1>
+    </div>
+    <div style="clear: left;"></div>
+
+    <main id="continut"></main>
+
+    <br />
+    <footer id="footer">
+      &copy;.2020.Programare web
+    </footer>
+  </body>
+</html>

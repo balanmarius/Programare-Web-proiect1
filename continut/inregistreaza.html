@@ -1,0 +1,82 @@
+<form action="/resurse/utilizatori.json" id="inregistrare">
+  <fieldset class="infogen" style="clear: left;">
+    <legend>Informații generale:</legend>
+    <label for="numeutilizator">Nume utilizator:</label>
+    <input
+      placeholder="PopescuIon98"
+      type="text"
+      id="numeutilizator"
+      name="utilizator"
+    />
+    <br />
+    <label>Parola:</label>
+    <input
+      placeholder="Parola utilizator"
+      type="text"
+      id="parola"
+      name="parola"
+    />
+    <br />
+    <label>Nume:</label>
+    <input placeholder="Popescu" type="text" id="nume" name="nume" />
+    <br />
+    <label>Prenume:</label>
+    <input placeholder="Ion" type="text" id="prenume" name="prenume" />
+    <br />
+    <label>Email:</label>
+    <input
+      placeholder="popescuion@gmail.com"
+      type="email"
+      id="email"
+      name="email"
+    />
+    <br />
+    <label>Telefon:</label>
+    <input placeholder="nr. tel." type="tel" id="telefon" name="telefon" />
+    <br />
+  </fieldset>
+  <fieldset class="infopers">
+    <legend>Informații personale:</legend>
+    <label>Sexul</label>
+    <select id="sex">
+      <option value="Masculin">M</option>
+      <option value="Feminin">F</option>
+    </select>
+    <br />
+    <label>Mâncarea preferata:</label>
+    <input placeholder="sarmale" list="Mancare" id="Mancare" />
+    <datalist id="Mancare">
+      <option value="Sarmale">Sarmale</option>
+      <option value="Coaste">Coaste</option>
+    </datalist>
+    <br />
+    <label>Culoarea preferată</label>
+    <input type="color" id="color" />
+    <br />
+    <label>Data nașterii:</label>
+    <input type="date" id="date" />
+    <br />
+    <label>Ora nașterii:</label>
+    <input type="time" id="time" />
+    <br />
+    <label>Vârsta:</label>
+    <input type="range" id="range" />
+    <br />
+    <label>Adresa paginii personale:</label>
+    <input placeholder="https://google.com" type="url" id="adresa" />
+    <br />
+    <label>Descriere:</label>
+    <textarea
+      placeholder="Introduceți descrierea in acest câmp"
+      rows="3"
+      cols="100"
+      id="descriere"
+    ></textarea>
+  </fieldset>
+  <input
+    id="button_inreg"
+    type="button"
+    value="Înregistrează"
+    onclick="loadForm()"
+  />
+</form>
